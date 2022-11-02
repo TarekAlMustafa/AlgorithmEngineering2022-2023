@@ -1,0 +1,3 @@
+C:/Users/Tarek/Documents/Work Documents Papers/Uni/Algorithm Engineering/Week1/pi_numerical_integration/cmake-build-debug/CMakeFiles/pi_numerical_integration.dir
+C:/Users/Tarek/Documents/Work Documents Papers/Uni/Algorithm Engineering/Week1/pi_numerical_integration/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Tarek/Documents/Work Documents Papers/Uni/Algorithm Engineering/Week1/pi_numerical_integration/cmake-build-debug/CMakeFiles/rebuild_cache.dir

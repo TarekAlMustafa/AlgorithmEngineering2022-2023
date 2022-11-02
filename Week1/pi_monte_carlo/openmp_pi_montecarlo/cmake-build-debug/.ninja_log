@@ -1,0 +1,20 @@
+# ninja log v5
+0	335	6890832219193375	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	b4df9cf6aec707f9
+2	368	6890832783480875	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+368	432	6890832784091434	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	404	6890842705913795	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+405	478	6890842706614433	openmp_pi_montecarlo.exe	a69c29022d0aa645
+1	407	6890842862379252	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+407	479	6890842863069880	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	398	6890843076589877	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+398	470	6890843077280504	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	396	6890843216048084	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+396	469	6890843216758733	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	416	6890844911927872	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+416	490	6890844912628491	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	401	6890845409755281	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+402	473	6890845410455916	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	391	6890846528619083	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+391	463	6890846529309627	openmp_pi_montecarlo.exe	a69c29022d0aa645
+2	389	6890846605505198	CMakeFiles/openmp_pi_montecarlo.dir/main.cpp.obj	3b08a03e549ca224
+390	463	6890846606215840	openmp_pi_montecarlo.exe	a69c29022d0aa645

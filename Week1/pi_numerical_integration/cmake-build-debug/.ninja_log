@@ -1,0 +1,4 @@
+# ninja log v5
+2	309	6890827441178904	CMakeFiles/pi_numerical_integration.dir/pi_numerical_integration.cpp.obj	681cc736535e1329
+309	374	6890827441801608	pi_numerical_integration.exe	1a9030300fdb3d0e
+1	110	6890830949425422	build.ninja	904d38c1b9e49b15
