@@ -1,0 +1,4 @@
+"E:\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Users\Tarek\Documents\Work Documents Papers\Uni\Algorithm Engineering\Week2\omp_for_loop" -B "C:\Users\Tarek\Documents\Work Documents Papers\Uni\Algorithm Engineering\Week2\omp_for_loop\cmake-build-debug"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Tarek/Documents/Work Documents Papers/Uni/Algorithm Engineering/Week2/omp_for_loop/cmake-build-debug
