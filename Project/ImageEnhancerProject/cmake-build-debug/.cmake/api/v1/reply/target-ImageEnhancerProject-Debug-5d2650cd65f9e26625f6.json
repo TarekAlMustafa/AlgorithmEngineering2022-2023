@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 12,
 				"parent" : 0
 			}
 		]
@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : " -Ofast -std=c++14 -fopenmp -g"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -65,7 +65,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-Ofast -std=c++14 -fopenmp -g",
 				"role" : "flags"
 			},
 			{
