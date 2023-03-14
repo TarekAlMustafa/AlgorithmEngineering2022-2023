@@ -57,7 +57,7 @@ int main() {
     uint8_t* MM_img = new uint8_t[width * height * gray_channels];
 
     // construct a window that moves over the image to dynamically calculate an average threshold
-    const int window = 11, winMinusTwo = window - 2;
+    const int window = 11, winMinusTwo = window - 2; //// NOTE: for low window sizes (~under 9) it has to be window-1 instead of window -2
     float localThreshold = 0;
     // conceptually you might think of this as a matrix, however, since we don't actually perform any matrix operations and just want to store the local Min and Max, we can just use a vector
     std::vector<int> v = {};
@@ -66,18 +66,19 @@ int main() {
     }
     start_time = omp_get_wtime();
     // this loop iterates over all rows besides last #window - 2
-    for(unsigned char *p = gray_img, *pg = MM_img; p != gray_img + gray_img_size - (width*winMinusTwo + window*window - 1); p ++ , pg ++) { //find correct end of for loop, start was -2*width+2
+    for(unsigned char *p = gray_img, *pg = MM_img; p != gray_img + gray_img_size - (width*winMinusTwo + window*window - 1); p ++ , pg ++) {
         int localMax = INT_MIN;
         int localMin = INT_MAX;
 
-        // the pointers fill the vector v with pixel values of a 3x3 window
+        // the pointers fill the vector v with pixel values
         // if we add the width to the pointer, we gain pixel values from #widths lines under the current *p
         for(int i = 0; i < window*window; i++){
             v[i] = *(p + (i % window) + (((int)i / window) * width));
         }
         //// dealing with high contrast pixels
-        int windowAverage = 0, threshAverage = 0, counter = 0, neighThreshold = 7;
+        int windowAverage = 0, threshAverage = 0, counter = 0, neighThreshold = 15;
         float stdSum = 0, stdd = 0;
+        // we first compute the average pixel value in the window
         for(int i = 0; i < v.size(); i++){
             windowAverage += v[i];
         }
@@ -112,6 +113,7 @@ int main() {
                 *pg = 255;
             }
         } else {
+            // compute local Min and Max to get the local threshold for the window
             for(int i = 0; i < v.size(); i++){
                 if(v[i] > localMax){
                     localMax = v[i];
@@ -141,6 +143,7 @@ int main() {
         int localMin = INT_MAX;
         int windowAverage = 0, threshAverage = 0, counter = 0, neighThreshold = 25;
         float stdSum = 0, stdd = 0;
+        // we first compute the average pixel value in the window
         for(int i = 0; i < v.size(); i++){
             windowAverage += v[i];
         }
@@ -167,13 +170,14 @@ int main() {
             stdSum /= 2;
             stdd = sqrt(stdSum);
 
-            //// CONDITION 2: If current pixel <= Emean + Estd/2
+            //// CONDITION 2: If current pixel <= (Emean + Estd)/2
             if(v[0] <= ((threshAverage + stdd)/2)){
                 *pg = 0;
             } else {
                 *pg = 255;
             }
         } else {
+            // compute local Min and Max to get the local threshold for the window
             for(int i = 0; i < v.size(); i++){
                 if(v[i] > localMax){
                     localMax = v[i];
@@ -183,7 +187,6 @@ int main() {
                 }
             }
             localThreshold = (localMax - localMin) / (localMax + localMin + 0.00000000001) * 255; // constant to avoid div by 0
-            //cout << localThreshold << endl;
             if(*p < localThreshold){
                 *pg = 0;
             } else{

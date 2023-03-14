@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_ImageEnhancerProject: phony || CMakeFile
 
 build CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj: CXX_COMPILER__ImageEnhancerProject_Debug C$:/Users/Tarek/Documents/ImageEnhancerProject/main.cpp || cmake_object_order_depends_target_ImageEnhancerProject
   DEP_FILE = CMakeFiles\ImageEnhancerProject.dir\main.cpp.obj.d
-  FLAGS = -Ofast -std=c++14 -fopenmp -g -std=gnu++14
+  FLAGS = -Ofast -std=c++14 -fopenmp -ffast-math -march=native -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\ImageEnhancerProject.dir
   OBJECT_FILE_DIR = CMakeFiles\ImageEnhancerProject.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj: CXX_COMPILER__ImageEnhan
 # Link the executable ImageEnhancerProject.exe
 
 build ImageEnhancerProject.exe: CXX_EXECUTABLE_LINKER__ImageEnhancerProject_Debug CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj
-  FLAGS = -Ofast -std=c++14 -fopenmp -g
+  FLAGS = -Ofast -std=c++14 -fopenmp -ffast-math -march=native -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ImageEnhancerProject.dir
   POST_BUILD = cd .

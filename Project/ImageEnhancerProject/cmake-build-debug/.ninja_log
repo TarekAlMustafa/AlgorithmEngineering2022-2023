@@ -1,11 +1,7 @@
 # ninja log v5
-2	894	7004386170588219	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	ce5238dd0bafacac
-895	989	7004386171518804	ImageEnhancerProject.exe	c2ee1be82274e7a
-2	6061	7004387078151141	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a32a243458c5310b
-6062	6183	7004387079415593	ImageEnhancerProject.exe	9679405f70523431
-2	5782	7004387424921643	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a32a243458c5310b
-5782	5881	7004387425952577	ImageEnhancerProject.exe	9679405f70523431
-2	5796	7004390517400785	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a32a243458c5310b
-5797	5889	7004390518361665	ImageEnhancerProject.exe	9679405f70523431
-2	5836	7004392657749110	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a32a243458c5310b
-5836	5929	7004392658719983	ImageEnhancerProject.exe	9679405f70523431
+3	6277	7005122062925447	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a32a243458c5310b
+6277	6374	7005122063936367	ImageEnhancerProject.exe	9679405f70523431
+2	7170	7005219907634618	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a11c536e7ce0eff0
+7171	7295	7005219908931076	ImageEnhancerProject.exe	de4a11da970ffb0b
+2	6684	7005220054623790	CMakeFiles/ImageEnhancerProject.dir/main.cpp.obj	a11c536e7ce0eff0
+6685	6798	7005220055794861	ImageEnhancerProject.exe	de4a11da970ffb0b
